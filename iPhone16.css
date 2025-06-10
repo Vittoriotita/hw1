@@ -1,0 +1,271 @@
+body {
+  margin: 0;
+  font-family: Helvetica, Arial, "Roboto", sans-serif;
+}
+:root {
+  --blue-link: rgb(51, 102, 204);
+}
+
+#global-header {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 44px;
+  width: 100%;
+  background-color: rgba(22, 22, 23, 1);
+  z-index: 100;
+}
+
+.hidden {
+  display: none !important;
+}
+#global-header #global-nav {
+  height: 100%;
+  padding-left: 22px;
+  padding-right: 22px;
+  margin-left: 38px;
+  margin-right: 38px;
+}
+#global-header #global-nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  height: 100%;
+  justify-content: space-around;
+  list-style-type: none;
+}
+#global-header #global-nav ul li {
+  display: flex;
+}
+#global-header #global-nav ul .link-container a {
+  font-size: 12px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0 8px;
+}
+#global-header #global-nav ul .logo-container svg {
+  fill: rgba(255, 255, 255, 0.8);
+  padding: 0 8px;
+}
+#global-header #global-nav ul #search-shop-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#global-header #global-nav ul .logo-container #menu-button {
+  display: none;
+}
+#global-header #global-nav ul .logo-container button {
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  color: white;
+}
+
+#welcome-section {
+  display: flex;
+  justify-content: space-between;
+  width: 87.5%;
+  padding: 52px 0 22px 0;
+  margin: 0 auto;
+}
+#welcome-section #welcome-left-container h1 {
+  font-size: 3em;
+  margin: 0;
+  padding-bottom: 13px;
+}
+#welcome-section #welcome-left-container #welcome-left-bottom-container {
+  font-size: 12px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-top: 13px;
+}
+#welcome-section #welcome-left-container #welcome-left-bottom-container img {
+  height: 21px;
+}
+#welcome-section #welcome-right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#welcome-section #welcome-right-container .welcome-right-button-container {
+  display: flex;
+  justify-content: end;
+}
+#welcome-section #welcome-right-container .welcome-button {
+  background-color: #f5f5f7;
+  color: rgb(48, 47, 47);
+  padding: 12px 16px;
+  font-size: 12px;
+  text-decoration: none;
+  border-radius: 16px;
+}
+#welcome-section #welcome-right-container .welcome-button:hover {
+  background-color: rgb(218, 217, 217);
+}
+
+#buy-section {
+  width: 87.5%;
+  margin: 0 auto 50px auto;
+  display: flex;
+}
+#buy-section #buy-left-container {
+  padding-top: 40px;
+  padding-right: 60px;
+  height: 100%;
+  width: 100%;
+}
+#buy-section #buy-left-container img {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+}
+#buy-section #buy-right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#buy-section #buy-right-container h2 {
+  font-size: 1.6em;
+  color: #676769;
+}
+#buy-section #buy-right-container h2 span {
+  color: rgba(22, 22, 23, 1);
+}
+#buy-section #buy-right-container #buy-buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+#buy-section #buy-right-container #buy-buttons-container .button-input {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  margin: 0;
+  position: absolute;
+}
+#buy-section #buy-right-container #buy-buttons-container .form-label-button {
+  width: 100%;
+  height: 83px;
+  background-color: transparent;
+  border-radius: 15px;
+  border: 1.5px solid #8d8d8d;
+  position: relative;
+}
+#buy-section #buy-right-container #buy-buttons-container .form-label-button:hover {
+  border-color: #5a5a5a;
+}
+#buy-section #buy-right-container #buy-buttons-container .form-label-button.selected {
+  border-color: var(--blue-link);
+  border-width: 2px;
+}
+#buy-section #buy-right-container #buy-buttons-container #acquista {
+  height: 50px;
+  color: white;
+  background-color: black;
+  border-color: black;
+}
+
+#buy-section #buy-right-container .buy-buttons-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  height: 100%;
+}
+#buy-section #buy-right-container .buy-buttons-text-container #buy-buttons-left-text {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  padding-left: 15px;
+}
+#buy-section #buy-right-container .buy-buttons-text-container #buy-buttons-left-text #phone {
+  font-weight: 600;
+}
+#buy-section #buy-right-container .buy-buttons-text-container #buy-buttons-left-text #size {
+  font-size: 0.8em;
+  font-weight: 0;
+}
+
+#main-footer {
+    margin-top: 10px;
+    display: block;
+    background-color: rgb(245, 245, 247);
+    height: 100%;
+  }
+  #main-footer #contenitore-footer {
+    margin: 0 auto;
+    font-size: 0.82em;
+  }
+  #main-footer #contenitore-footer #contenitore-lista-principale {
+    padding: 17px 0 11px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  #main-footer #contenitore-footer #contenitore-lista-principale ul {
+    list-style: none;
+    padding: 0 22px;
+    margin: 0 38px;
+  }
+  #main-footer #contenitore-footer #contenitore-lista-principale ul li {
+    padding-bottom: 10px;
+  }
+  .solid-line {
+    margin: 0 auto;
+    width: 90vw;
+  }
+  
+  #footer-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 22px 0;
+    margin: 0 38px;
+  }
+  #footer-nav .footer-column {
+    width: 196px;
+  }
+  #footer-nav .footer-column .titoli-lista,
+  #footer-nav .footer-column .sotto-titoli-lista {
+    font-size: 0.89em;
+    margin: 0;
+    color: rgb(44, 44, 44);
+  }
+  #footer-nav .footer-column .footer-column-list {
+    list-style: none;
+    padding: 0;
+  }
+  #footer-nav .footer-column .footer-column-list li {
+    padding-bottom: 10px;
+  }
+  #footer-nav .footer-column .footer-nav-link {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  @media (max-width: 750px) {
+    #footer-nav {
+      flex-wrap: wrap;
+    }
+  }
+  .contenitore-finale {
+    padding: 20px 22px 0;
+    margin: 20px 38px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .contenitore-finale .footer-link {
+    color: rgb(25, 144, 255);
+  }
+  #final2.contenitore-finale {
+    padding-top: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  #final2 a {
+    color: rgba(0, 0, 0, 0.7);
+  }
+  #block {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(245, 245, 247);
+  }
+
